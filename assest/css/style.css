@@ -1,0 +1,162 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main{
+
+}
+
+#header{
+    background-color: black;
+    height: 46px;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav, .subnav {
+    list-style: none;
+}
+
+#nav >li{
+        display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav > li > a {
+    color: white;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 20px;
+    display: block;
+}
+
+#nav .subnav li:hover, 
+#nav >li:hover >a {
+    color: black;
+    background-color: #ccc;
+}
+
+#nav .subnav {
+    position: absolute;
+    top:100%;
+    left: 0;
+    background-color: white!important;
+    min-width: 160px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: none;
+}   
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav .subnav a {
+    line-height: 38px;
+    color: black;
+    padding: 0 12px;
+}
+
+#nav li .ti-angle-down {
+    font-size: 10px;
+}
+
+#header .search-button {  
+    padding: 0 21px;
+    float: right;
+}
+
+#header .search-icons {
+    line-height: 46px;
+    font-size: 20px;
+}
+
+#header .search-button:hover {
+    cursor: pointer;
+    background-color: #f44336;
+}
+
+#slider{
+    position: relative;
+    margin-top: 46px;
+    padding-top: 56.25%;
+    background: url('/web_the_band/assest/img/slider_1.jpg') top center / cover no-repeat;
+    /* background-color: #333; */
+}
+
+.text-content{
+    position: absolute;
+    bottom: 47px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.text-heading{
+    font-weight: 700;
+    font-size: 24px;
+} 
+
+.text-description{
+    margin: top 25px;
+    font-size: 15px
+}
+
+#content{
+
+}
+
+#content .content-section{
+    max-width: 800px;
+    padding-top: 64px;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+#content .section-heading,
+#content .section-sub-heading{
+    text-align: center;
+} 
+
+#content .section-heading{
+    font-size: 35px;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+#content .section-sub-heading{
+    font-size: 15px;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.8;
+} 
+
+#content .about-content{
+    text-align: justify;
+    margin-top: 25px;
+    line-height: 1.4;
+}
+
+#footer{
+
+}
